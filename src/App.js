@@ -6,7 +6,7 @@ function App() {
   return (
     <>
     {/* Added navbar */}
-      <Navbar/>
+      <Navbar title="Title_passed_by_props" Textabout="Aboutnew"/>
     </>
   );
 }
