@@ -14,10 +14,12 @@ function App() {
     if(mode==='dark'){
       setMode('light');
       document.body.style.backgroundColor='white';
+      document.title="Text utils-Light";
     }
     else{
       setMode('dark');
       document.body.style.backgroundColor='#071e41';
+      document.title="Text utils-Dark";
     }
   }
 
