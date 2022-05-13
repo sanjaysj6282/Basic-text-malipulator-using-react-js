@@ -37,7 +37,7 @@ export default function TextForm(props) {
                 <button type="button" className="btn btn-primary mx-1" onClick={handleUpClick}>Convert to uppercase</button>
                 <button type="button" class="btn btn-secondary" onClick={handleLowerClick}>Convert to lowercase</button>
         </div>
-        <div className="container" style={{color: props.mode==='dark'?'white':'grey'}}>
+        <div className="container" style={{color: props.mode==='dark'?'white':'#071e41'}}>
             <h2>Your text summary</h2>
             <p>{val}</p>
             <p>{text.split(" ").length} words</p>

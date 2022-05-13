@@ -17,7 +17,7 @@ function App() {
     }
     else{
       setMode('dark');
-      document.body.style.backgroundColor='grey';
+      document.body.style.backgroundColor='#071e41';
     }
   }
 
