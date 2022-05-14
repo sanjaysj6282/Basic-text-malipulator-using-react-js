@@ -1,10 +1,10 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 import './App.css';
 import About from './Components/About';
 import Navbar from './Components/Navbar';
 import TextForm from './Components/TextForm';
 import React, {useState} from 'react';
-
-// import TextForm from './Components/TextForm';
 
 let name="Text";
 function App() {
@@ -25,15 +25,15 @@ function App() {
 
   return (
     <>
-    {/* Added navbar */}
-      <Navbar title={name} Textabout="Aboutnew" mode={mode} toggleMode={toogleMode}/>
-      <div className="container">
-        <TextForm heading="Enter the text below" mode={mode}/>
+    <BrowserRouter>
+      <Navbar title={name} Textabout="About" mode={mode} toggleMode={toogleMode}/>
+      <div className="container my-3">
+      <Routes>
+        <Route path="/" element={<TextForm heading="Enter the text below" mode={mode}/>} />
+        <Route exact path="about" element={<About/>} />
+      </Routes>
       </div>
-
-      {/* <About/> */}
-      
-
+    </BrowserRouter>
     </>
   );
 }
